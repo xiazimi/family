@@ -1,5 +1,6 @@
 export default {
   npmClient: 'pnpm',
+  publicPath: 'http://family.qiunian.top/code/code/',
   routes: [
     {
       path: '/',
