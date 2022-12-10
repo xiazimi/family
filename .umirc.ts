@@ -1,6 +1,6 @@
 export default {
   npmClient: 'pnpm',
-  publicPath: 'http://family.qiunian.top/code/',
+  publicPath: process.env.NODE_ENV === 'development' ? '/' : 'http://family.qiunian.top/code/',
   routes: [
     {
       path: '/',
