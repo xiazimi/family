@@ -4,17 +4,11 @@ export default {
   routes: [
     {
       path: '/',
-      component: '@/layouts/index.tsx',
-      routes: [
-        {
-          path: '/',
-          component: '@/pages/index.tsx',
-        },
-        {
-          path: '/user',
-          component: '@/pages/About/index.tsx',
-        },
-      ]
+      component: '@/pages/index.tsx',
+    },
+    {
+      path: '/user',
+      component: '@/pages/About/index.tsx',
     },
   ],
   extraBabelPlugins: [

@@ -4,17 +4,14 @@ import { ConfigProvider } from 'antd';
 export default function Layout() {
   return (
     <ConfigProvider>
-      {/* <ul>
+      <ul>
         <li>
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/docs">Docs</Link>
+          <Link to="/user">user</Link>
         </li>
-        <li>
-          <a href="https://github.com/umijs/umi">Github</a>
-        </li>
-      </ul> */}
+      </ul>
       <Outlet />
     </ConfigProvider>
   );
