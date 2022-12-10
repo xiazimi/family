@@ -12,28 +12,28 @@ export default function HomePage() {
   const [name, setName] = useState('');
   const [loading, setLoading] = useState(false);
 
-  useAsyncEffect(async () => {
-    try {
-      if(!curVal) {
-        return;
-      }
-      setLoading(true)
-      const { data } = await fetch({api: apis.getTest, params: { name: curVal }})
-      setName(data)
-    } catch (error) {
-      console.log(error);
-    } finally {
-      setLoading(false)
-    }
-  }, [curVal])
+  // useAsyncEffect(async () => {
+  //   try {
+  //     if(!curVal) {
+  //       return;
+  //     }
+  //     setLoading(true)
+  //     const { data } = await fetch({api: apis.getTest, params: { name: curVal }})
+  //     setName(data)
+  //   } catch (error) {
+  //     console.log(error);
+  //   } finally {
+  //     setLoading(false)
+  //   }
+  // }, [curVal])
   
   return (
     <div>
       <h1>查询应用</h1>
-      <Spin spinning={loading}>
+      {/* <Spin spinning={loading}>
         <div>{name}----</div>
-      </Spin>
-      <Input style={{ width: 500 }} onBlur={(e) => setCurVal(e.target.value)}/>
+      </Spin> */}
+      {/* <Input style={{ width: 500 }} onBlur={(e) => setCurVal(e.target.value)}/> */}
      <div className={styles.title}>邱念第一次部署自己的前端应用</div>
      <div className={styles.content}>
       <h2>我儿子邱博言的第一张照片</h2>
